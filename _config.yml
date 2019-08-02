@@ -92,7 +92,7 @@ live2d:
   enable: true
   pluginModelPath: assets/
   model:
-    use: model-wanko  #模板目录，在node_modules里
+    use: wanko  #模板目录，在node_modules里
   display:
     hOffset: 100
   mobile:
