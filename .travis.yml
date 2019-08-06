@@ -14,7 +14,6 @@ after_script:
 - git init
 - git config user.name "EGo14T"
 - git config user.email "974412906@qq.com"
-- git remote set-url --add origin git@49.232.14.91:/srv/gitrepo/myblog.git
 - git add .
 - git commit -m "Update docs with TRAVIS-CI"
 - git push --force --quiet "https://${EGo1ST}@${GH_REF}" master:master
@@ -35,4 +34,7 @@ before_install:
 - chmod 600 ~/.ssh/id_rsa 
 addons:
   ssh_known_hosts: 49.232.14.91
+
+after_success:
+- git push git@49.232.14.91:/srv/gitrepo/myblog.git
 
