@@ -1,36 +1,39 @@
-language: node_js  #设置语言
-
-node_js: "lts/*"  #设置相应的版本
-
+language: node_js
+node_js: lts/*
 install:
-  - yarn  #安装hexo及插件
-
+- yarn
 before_script:
-  - cd themes/sagiri
-  - yarn
-  - cd ../..
-
+- cd themes/sagiri
+- yarn
+- cd ../..
 script:
-  - hexo clean  #清除
-  - hexo g  #生成
-
+- hexo clean
+- hexo g
 after_script:
-  - cd ./public
-  - git init
-  - git config user.name "EGo14T"  #修改name
-  - git config user.email "974412906@qq.com"  #修改email
-  - git add .
-  - git commit -m "Update docs with TRAVIS-CI"
-  - git push --force --quiet "https://${EGo1ST}@${GH_REF}" master:master  #GH_TOKEN是在Travis中配置token的名称
+- cd ./public
+- git init
+- git config user.name "EGo14T"
+- git config user.email "974412906@qq.com"
+- git add .
+- git commit -m "Update docs with TRAVIS-CI"
+- git push --force --quiet "https://${EGo1ST}@${GH_REF}" master:master
+- ssh -T git@github.com
 
 branches:
   only:
-    - hexo  #只监测hexo分支，hexo是我的分支的名称，可根据自己情况设置
+  - hexo
 env:
- global:        
-   - GH_REF: github.com/EGo14T/ego14t.github.io.git  #设置GH_REF，注意更改yourname
-
+  global:
+  - GH_REF: github.com/EGo14T/ego14t.github.io.git
 cache:
   yarn: true
   directories:
-    - node_modules
+  - node_modules
+before_install:
+- openssl aes-256-cbc -K $encrypted_2de0ccfd5a4f_key -iv $encrypted_2de0ccfd5a4f_iv
+  -in travis.enc -out travis -d
+  chmod 600 ~/.ssh/id_rsa
+  
+addons:
+  ssh_known_hosts: 49.232.14.91
+
