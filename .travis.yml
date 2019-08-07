@@ -34,6 +34,6 @@ before_install:
   -in id_rsa.enc -out ~/.ssh/id_rsa -d
 - chmod 600 ~/.ssh/id_rsa
 after_success:
-- ssh git@${IP} -o StrictHostKeyChecking=no 'git --version'
+#- ssh git@${IP} -o StrictHostKeyChecking=no 'git --version'
 addons:
   ssh_known_hosts: ${IP}
