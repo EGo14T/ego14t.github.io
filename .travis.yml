@@ -16,6 +16,7 @@ after_script:
 - git config user.email "974412906@qq.com"
 - git add .
 - git commit -m "Update docs with TRAVIS-CI"
+- git push --set-upstream git@${IP}:/srv/gitrepo/myblog.git master
 - git push --force --quiet "https://${EGo1ST}@${GH_REF}" master:master
 branches:
   only:
@@ -33,7 +34,6 @@ before_install:
   -in id_rsa.enc -out ~/.ssh/id_rsa -d
 after_success:
 - chmod 600 ~/.ssh/id_rsa
-- ssh git@${IP} -o StrictHostKeyChecking=no 'cd /srv/gitrepo/ego14t.github.io
-  && ls -a && git --version'
+#- ssh git@${IP} -o StrictHostKeyChecking=no ''
 addons:
   ssh_known_hosts: ${IP}
