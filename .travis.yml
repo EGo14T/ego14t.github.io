@@ -3,21 +3,21 @@ node_js: lts/*
 install:
 - yarn
 before_script:
-- cd themes/sagiri
-- yarn
-- cd ../..
+#- cd themes/sagiri
+#- yarn
+#- cd ../..
 script:
-- hexo clean
-- hexo g
+#- hexo clean
+#- hexo g
 after_script:
-- cd ./public
-- git init
-- git config user.name "EGo14T"
-- git config user.email "974412906@qq.com"
-- git add .
-- git commit -m "Update docs with TRAVIS-CI"
-- git push --force --quiet "https://${EGo1ST}@${GH_REF}" master:master
-- git push --set-upstream git@49.232.14.91:/srv/gitrepo/blog.git master
+#- cd ./public
+#- git init
+#- git config user.name "EGo14T"
+#- git config user.email "974412906@qq.com"
+#- git add .
+#- git commit -m "Update docs with TRAVIS-CI"
+#- git push --force --quiet "https://${EGo1ST}@${GH_REF}" master:master
+#- git push --set-upstream git@49.232.14.91:/srv/gitrepo/blog.git master
 
 
 branches:
