@@ -35,7 +35,7 @@ before_install:
 
 after_success:
 - chmod 600 ~/.ssh/id_rsa   #还是Linux文件权限问题
-- ssh git@49.232.14.91 -o StrictHostKeyChecking=no 'cd /srv/gitrepo/ego14t.github.io && ls -a && git --version'
+- ssh git@49.232.14.91 -o StrictHostKeyChecking=no 'cd /srv/gitrepo/ego14t.github.io && ls -a && git --version' ##执行脚本
 
 addons:
   ssh_known_hosts: 49.232.14.91
