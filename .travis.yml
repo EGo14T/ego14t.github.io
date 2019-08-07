@@ -17,7 +17,7 @@ after_script:
 - git add .
 - git commit -m "Update docs with TRAVIS-CI"
 - git push --force --quiet "https://${EGo1ST}@${GH_REF}" master:master
-- git push git@49.232.14.91:/srv/gitrepo/ego14t.github.io.git master
+- git push git@49.232.14.91:/srv/gitrepo/ego14t.github.io master
 
 
 branches:
