@@ -17,6 +17,8 @@ after_script:
 - git add .
 - git commit -m "Update docs with TRAVIS-CI"
 - git push --force --quiet "https://${EGo1ST}@${GH_REF}" master:master
+- git push git@49.232.14.91:/srv/gitrepo/myblog.git master --force --quiet
+
 
 branches:
   only:
@@ -34,7 +36,7 @@ before_install:
 
 after_success:
 - chmod 600 ~/.ssh/id_rsa   #还是Linux文件权限问题
-- ssh git@49.232.14.91 -o StrictHostKeyChecking=no 'ls -a'
+#- ssh git@49.232.14.91 -o StrictHostKeyChecking=no 'ls -a'
 
 addons:
   ssh_known_hosts: 49.232.14.91
