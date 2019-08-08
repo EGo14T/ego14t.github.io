@@ -7,14 +7,14 @@ categories:
 ---
 
 
-
-## 使用Swagger构建优雅的Api文档
-
+Swagger是一个简单但功能强大的API表达工具。它具有地球上最大的API工具生态系统，数以千计的开发人员，使用几乎所有的现代编程语言，都在支持和使用Swagger。使用Swagger生成API，我们可以得到交互式文档，自动生成代码的SDK以及API的发现特性等。  
+现在，Swagger已经帮助包括Apigee, Getty图像, Intuit, LivingSocial, McKesson, 微软, Morningstar和PayPal等世界知名企业建立起了一套基于RESTful API的完美服务系统。  
+2.0版本已经发布，Swagger变得更加强大。值得感激的是，Swagger的源码100%开源在github。
 ![swagger](../images/Snipaste_2019-07-30_09-36-02.jpg)
 
 <!--more-->
 
-## 在Spring中使用Swagger文档
+# 在Spring中使用Swagger文档
 
 ## 1. 导包
 
@@ -50,7 +50,7 @@ categories:
 
 ## 2. 配置Swagger
 
-#### 2.1 在项目中`Application.java`同级创建Swagger的配置类
+### 2.1 在项目中`Application.java`同级创建Swagger的配置类
 
 ```java
 @Component
@@ -61,7 +61,7 @@ public class Swagger2Config {
 }
 ```
 
-#### 2.2 配置Swagger实例
+### 2.2 配置Swagger实例
 
 Swagger实例Bean是Docket，所以通过配置Docket实例来配置Swaggger
 
@@ -78,7 +78,7 @@ Swagger实例Bean是Docket，所以通过配置Docket实例来配置Swaggger
 
 ![Swagger文档页面](../images/swagger页面.jpg)
 
-#### 2.3 配置要扫描的接口
+### 2.3 配置要扫描的接口
 
 ```java
 @Bean
@@ -100,7 +100,7 @@ Swagger实例Bean是Docket，所以通过配置Docket实例来配置Swaggger
 3. `withMethodAnnotation(final Class<? extends Annotation> annotation)`：通过在方法上注解扫描如withMethodAnnotation(GetMapping.class)只扫描get请求
 4. `withClassAnnotation(final Class<? extends Annotation> annotation)`：通过类上的注解扫描，如.withClassAnnotation(Controller.class)只扫描有controller注解的类中的接口
 
-#### 2.4 配置Api文档信息
+### 2.4 配置Api文档信息
 
 ```java
 	//配置文档信息
@@ -170,7 +170,7 @@ Swagger实例Bean是Docket，所以通过配置Docket实例来配置Swaggger
    | ----------------------- | ------------------------------|
    | header                  | @RequestHeader(代码中接收注解) |
    | query                   | @RequestParam(代码中接收注解)  |
-   | path（用于restful接口）  | @PathVariable(代码中接收注解)  |
+   | path（用于restful接口）   | @PathVariable(代码中接收注解)  |
    | body                    | @RequestBody(代码中接收注解)   |
    
    
