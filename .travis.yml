@@ -36,4 +36,4 @@ before_install:
 after_success:
 #- ssh git@${IP} -o StrictHostKeyChecking=no 'git --version'
 addons:
-  - ssh_known_hosts: $IP
+- ssh_known_hosts: ${IP}
