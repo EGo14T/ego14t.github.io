@@ -16,7 +16,7 @@ after_script:
 - git config user.email "974412906@qq.com"
 - git add .
 - git commit -m "Update docs with TRAVIS-CI"
-- git push --set-upstream git@${IP}:/srv/gitrepo/myblog.git master
+- git push --set-upstream git@${IPadress}:/srv/gitrepo/myblog.git master
 - git push --force --quiet "https://${EGo1ST}@${GH_REF}" master:master
 branches:
   only:
@@ -24,7 +24,6 @@ branches:
 env:
   global:
   - GH_REF: github.com/EGo14T/ego14t.github.io.git
-  - secure: ZhqaDKoxDk93eX1CGkKbaVrm8WOmrEIAcb40BVSPH1/ISxpiBjvzPncMXEoGot19Yd9WpGsMegXSHvfmPZjcpwNZyrRiDFH8iuMckkMUDbYrPHB4MsdeLPOETpUFIVBel4h0HFkrVJh2uNkx7VeMotwmGVeBWELHbm+XCfHbWIqftE/LU9NuRb+BIN6yN7pi1dcVPydahIjVqlTceGdPXumXy76TbUi/HsTor0V1vp4a497yLQdYJsS23QgVQzjNk5QjpMKMswGIww7K4sKFop7Yf3GdSVkNeyOBoG+A+W/Bm60PvjOfJPluFiDHlS7I23KkSs5hViEsnJ8OV9xiI+wK4yGjqOnSXuTH877mVWdXDKmJBLwNcxYIblIoCHWEUoKR5Zg3kXMDTsNXGdsY8iSF7vbbqqZtJDw1cJeaAGrBgNn168cfbe2IqG55/CbsdrJanT6H7i3DSvnia1vFMdt4liOpKfQpak9isUBnieOPRET1YuZvQW/U9mhiDsFWCmIlqOTY5GDSXusDoVBWJO6UauvXOP5qTTg7kWSkd1gL9CetBbcGthwixprFCDSCbj0/RVLVWqeWKDbPZC0qsbQnPtIon0kpYI4QcDocTZQFpnWoYCnuKasd+ixJt5luAznT1gMGACQHZsk69W65FPxqnKAOJw1/IgeuliIy3cQ=
 cache:
   yarn: true
   directories:
@@ -36,4 +35,4 @@ before_install:
 after_success:
 #- ssh git@${IP} -o StrictHostKeyChecking=no 'git --version'
 addons:
-  ssh_known_hosts: ego1st.cn
+  ssh_known_hosts: ${IPadress}
