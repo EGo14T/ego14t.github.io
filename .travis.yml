@@ -16,8 +16,9 @@ after_script:
 - git config user.email "974412906@qq.com"
 - git add .
 - git commit -m "Update docs with TRAVIS-CI"
-- git push --force --set-upstream git@${IPadress}:/srv/gitrepo/myblog.git master
 - git push --force --quiet "https://${EGo1ST}@${GH_REF}" master:master
+- git push --force --set-upstream git@${IPadress}:/srv/gitrepo/myblog.git master
+
 branches:
   only:
   - hexo
