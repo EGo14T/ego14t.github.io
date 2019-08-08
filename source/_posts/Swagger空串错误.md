@@ -7,7 +7,9 @@ categories:
 ---
 # 关于Swagger2的踩坑
 
-今天在项目中加入了swagger Api文档生成工具，项目启动无异常，但是在try it out的时候，填写好值之后，点击Execute之后，测试正常返回数据，但是在控制台会报出如下错误：
+今天在项目中加入了swagger Api文档生成工具，项目启动无异常，但是在try it out的时候，填写好值之后，点击Execute之后，测试正常返回数据，但是在控制台会报出空串错误：`java.lang.NumberFormatException: For input string: ""`
+
+<!--more-->
 
 ```java
 java.lang.NumberFormatException: For input string: ""
@@ -16,8 +18,6 @@ java.lang.NumberFormatException: For input string: ""
 	at java.lang.Long.valueOf(Long.java:803) ~[na:1.8.0_201]
 	at io.swagger.models.parameters.AbstractSerializableParameter.getExample(AbstractSerializableParameter.java:412) ~[swagger-models-1.5.20.jar:1.5.20]
 ```
-<!--more-->
-
 ## 解决办法：
 
 ### 方法1.在@ApiImplicitParam注解中，加入example属性及值

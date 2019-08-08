@@ -7,3 +7,4 @@ categories:
 
 # 测试TravisCI
 
+这篇博客是采用git+TravisCI实现的自动化部署

@@ -10,6 +10,8 @@ categories:
 
 ### 使用Swagger构建优雅的Api文档
 
+![swagger](../images/Snipaste_2019-07-30_09-36-02.jpg)
+
 <!--more-->
 
 # 在Spring中使用Swagger文档
@@ -130,7 +132,7 @@ Swagger实例Bean是Docket，所以通过配置Docket实例来配置Swaggger
 
 ## 3. 完成
 
-![swagger](../images\Snipaste_2019-07-30_09-36-02.jpg)
+![swagger](../images/Snipaste_2019-07-30_09-36-02.jpg)
 
 ## 4. Api的详细信息配置
 
