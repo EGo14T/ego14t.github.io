@@ -32,7 +32,8 @@ before_install:
 - openssl aes-256-cbc -K $encrypted_09fcd4f45c48_key -iv $encrypted_09fcd4f45c48_iv
   -in id_rsa.enc -out ~/.ssh/id_rsa -d
 - chmod 600 ~/.ssh/id_rsa
+
 after_success:
-#- ssh git@${IP} -o StrictHostKeyChecking=no 'git --version'
+
 addons:
   ssh_known_hosts: 49.232.14.91
