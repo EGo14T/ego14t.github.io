@@ -14,6 +14,8 @@ Eureka由两个组件组成：
 
 2. Eureka Client （服务注册）
 
+<!--more-->
+
 # Eurek Server搭建
 
 ## 在IDEA中新建一个Spring boot项目
@@ -142,3 +144,6 @@ server:
 
 ## 启动
 
+启动后，在`Instances currently registered with Eureka`中可看到Eureka客户端的信息
+
+![](../images/Snipaste_2019-08-12_11-40-27.jpg)
