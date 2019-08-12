@@ -6,9 +6,8 @@ categories:
   - Vue笔记
 ---
 # Vue笔记&ensp;Day2
-<!--more-->
 ## Vue事件修饰符
-### 1. “.stop”&ensp;阻止冒泡事件
+### “.stop”&ensp;阻止冒泡事件
 ```html
 <!--当出发Button的点击事件后，会立即触发div的点击事件-->
         <div class='inner' @click='div1Handler'>
@@ -16,27 +15,30 @@ categories:
             <input type="button" value="Button1" @click.stop='btnHandler'>
         </div>
 ```
-### 2. “.prevent”&ensp;阻止默认事件
+<!--more-->
+
+### “.prevent”&ensp;阻止默认事件
+
 ```html
 <!--当触发Button点击事件后，会阻止默认事件，即不触发a标签跳转事件-->
         <a href="http://www.google.com" class="href"  
         @click.prevent='linkClick'>Google</a>
 ```
-### 3. “.capture”&ensp;与冒泡事件正好相反，从外向内触发事件
+### “.capture”&ensp;与冒泡事件正好相反，从外向内触发事件
 ```html
 <!--使用capture实现触发事件的机制 先触发divHandler，再触发btnHandler-->
         <div class="inner" @click.capture='div1Handler'>
             <input type="button" value="Button2" @click='btnHandler'>
         </div>
 ```
-### 4.  “.self”&ensp;只有点自己才会执行
+### “.self”&ensp;只有点自己才会执行
 ```html
 <!--使用self实现自己单独执行，不触发冒泡事件-->
         <div class="inner" @click.self='div1Handler'> 
             <input type="button"  value="Button3" @click='btnHandler'>
         </div>
 ```
-### 5. “.once”&ensp;只执行一次，可与其他修饰符串联，如：
+### “.once”&ensp;只执行一次，可与其他修饰符串联，如：
 ```html
 <!--串联修饰符， 阻止一次事件触发 使用once, prevent可以触发一次事件处理函数-->
         <a href="http://www.baidu.com"  
@@ -45,7 +47,7 @@ categories:
         <a href="http://www.baidu.com"  
         @click.prevent.once='linkClick'>Baidu</a>
 ```
-### 6. “.self”与“.stop”的区别
+### “.self”与“.stop”的区别
 + .stop:阻止所有的冒泡行为  
 ```html
 <!--点击button不会向外冒泡触发其他外层事件-->

@@ -16,7 +16,7 @@ Swagger是一个简单但功能强大的API表达工具。它具有地球上最�
 
 # 在Spring中使用Swagger文档
 
-## 1. 导包
+## 导包
 
 在SpringBoot的pom.xml文件中加入依赖，空串问题在另一篇blog有写
 
@@ -48,9 +48,9 @@ Swagger是一个简单但功能强大的API表达工具。它具有地球上最�
         </dependency>
 ```
 
-## 2. 配置Swagger
+## 配置Swagger
 
-### 2.1 在项目中`Application.java`同级创建Swagger的配置类
+### 在项目中`Application.java`同级创建Swagger的配置类
 
 ```java
 @Component
@@ -61,7 +61,7 @@ public class Swagger2Config {
 }
 ```
 
-### 2.2 配置Swagger实例
+### 配置Swagger实例
 
 Swagger实例Bean是Docket，所以通过配置Docket实例来配置Swaggger
 
@@ -78,7 +78,7 @@ Swagger实例Bean是Docket，所以通过配置Docket实例来配置Swaggger
 
 ![Swagger文档页面](../images/swagger页面.jpg)
 
-### 2.3 配置要扫描的接口
+### 配置要扫描的接口
 
 ```java
 @Bean
@@ -100,7 +100,7 @@ Swagger实例Bean是Docket，所以通过配置Docket实例来配置Swaggger
 3. `withMethodAnnotation(final Class<? extends Annotation> annotation)`：通过在方法上注解扫描如withMethodAnnotation(GetMapping.class)只扫描get请求
 4. `withClassAnnotation(final Class<? extends Annotation> annotation)`：通过类上的注解扫描，如.withClassAnnotation(Controller.class)只扫描有controller注解的类中的接口
 
-### 2.4 配置Api文档信息
+### 配置Api文档信息
 
 ```java
 	//配置文档信息
@@ -130,11 +130,11 @@ Swagger实例Bean是Docket，所以通过配置Docket实例来配置Swaggger
     private final List<VendorExtension> vendorExtensions;
 ```
 
-## 3. 完成
+## 完成
 
 ![swagger](../images/Snipaste_2019-07-30_09-36-02.jpg)
 
-## 4. Api的详细信息配置
+## Api的详细信息配置
 
 1. `@Api`：作用于控制器类上，标识这个类是Swagger资源，tags值会在页面显示
 
