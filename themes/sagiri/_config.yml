@@ -808,7 +808,7 @@ footer:
   # -------------------------------------------------------------
   # Any custom text can be defined here.
   custom_text: 艾欧尼亚，昂扬不灭！
-  sitemap: 
+  sitemap: /sitemap.xml
   beian: 豫ICP备19029669号
 
 online_api: 
