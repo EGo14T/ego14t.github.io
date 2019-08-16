@@ -94,7 +94,7 @@
     }
   </script>-->
 
-  <script>
+  <!--<script>
     var serviceWorkerUri = '/sw.js';
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register(serviceWorkerUri).then(function() {
@@ -109,6 +109,6 @@
     } else {
         console.log('Service workers are not supported in the current browser.');
     }
-  </script>
+  </script>-->
 </body>
 </html>
