@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Allow: /archives/
+Allow: /categories/
+Allow: /tags/ 
+Disallow: /message/
+Disallow: /js/
+Disallow: /css/
+Disallow: /live2dw/
+
+Sitemap: https://ego1st.cn/sitemap.xml
+Sitemap: https://ego1st.cn/baidusitemap.xml
