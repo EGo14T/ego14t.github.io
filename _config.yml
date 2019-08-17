@@ -6,14 +6,12 @@
 title: Hi,EGo1ST!
 subtitle:
 description:
-keywords:
 author: EGo1ST
 language: zh-Hans
-timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: ego1st.cn
+url: https://ego1st.cn
 root: /
 permalink: :title/
 permalink_defaults:
@@ -26,11 +24,11 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
 
 # Writing
 new_post_name: :title.md # File name of new posts
 default_layout: post
+auto_spacing: true
 titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
@@ -52,6 +50,15 @@ index_generator:
   path: ''
   per_page: 10
   order_by: -date
+
+category_generator:
+  per_page: 0
+
+archive_generator:
+  per_page: 0
+
+tag_generator:
+  per_page: 0
   
 # Category & Tag
 default_category: uncategorized
@@ -87,6 +94,12 @@ search:
   field: post
   format: html
   limit: 10000
+
+js_minifier:
+  enable: false
+
+image_minifier:
+  enable: false
   
 live2d:
   enable: true

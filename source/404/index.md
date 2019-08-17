@@ -7,10 +7,10 @@ comments: false
 
 你可能需要：
 
-- [返回首页](https://diygod.me)
+- [返回首页](https://ego1st.cn)
 
-- [所有文章](https://diygod.me/archives/)
+- [所有文章](https://ego1st.cn/archives/)
 
-- [给我留言](https://diygod.me/message/)
+- [给我留言](https://ego1st.cn/message/)
 
 - 搜索文章：右上角

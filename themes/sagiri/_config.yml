@@ -223,8 +223,8 @@ bitcoin:
 # Declare license on posts
 post_copyright:
   enable: false
-  license: 
-  license_url: 
+  license: CC BY-NC-SA 3.0
+  license_url: https://creativecommons.org/licenses/by-nc-sa/3.0/
 
 
 # ---------------------------------------------------------------
@@ -441,7 +441,7 @@ needmoreshare2:
 #google_site_verification:
 
 # Google Analytics
-google_analytics: UA-48084758-7
+google_analytics: UA-145810187-1
 
 # Bing Webmaster tools verification setting
 # See: https://www.bing.com/webmaster/
@@ -695,7 +695,7 @@ vendors:
 
   disqusjs: https://cdn.jsdelivr.net/npm/disqusjs@1.2.2/dist/disqus.js
 
-  # Internal version: 2.1.3
+  # Internal version: 2.1.5
   jquery: https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js
 
   # Internal version: 2.1.5
