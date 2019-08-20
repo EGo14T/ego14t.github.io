@@ -72,7 +72,7 @@ menu:
   归档: /archives/ || archive
   # 投喂: /donate/ || cutlery
   # 后宫: /friends/ || mars
-  留言板: /message/ || pencil
+  # 留言板: /message/ || pencil
   # 关于: /about/ || rocket
 
 submenu:
