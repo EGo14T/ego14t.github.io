@@ -72,7 +72,7 @@ menu:
   归档: /archives/ || archive
   # 投喂: /donate/ || cutlery
   # 后宫: /friends/ || mars
-  # 留言板: /message/ || pencil
+  留言板: /message/ || pencil
   # 关于: /about/ || rocket
 
 submenu:
@@ -372,7 +372,7 @@ valine:
 
 # Support for LiveRe comments system.
 # You can get your uid from https://livere.com/insight/myCode (General web site)
-# livere_uid: MTAyMC80NjEyMi8yMjYzMw==
+livere_uid: MTAyMC80NjEyMi8yMjYzMw==
 
 # Gitment
 # Introduction: https://imsun.net/posts/gitment-introduction/
@@ -784,7 +784,7 @@ header_bg: /images/header-sagiri.png
 card:
   avatar: /images/card.jpg
   name: <span style="opacity:.2;">帅B</span>EGo1ST
-  description: 你能抓到我么？
+  description: 五元钱，结下缘，汝乃为有缘人
 
 footer:
   # Specify the date when the site was setup.
@@ -810,6 +810,8 @@ footer:
   custom_text: 艾欧尼亚，昂扬不灭！
   sitemap: /sitemap.xml
   beian: 豫ICP备19029669号
+  wangan: 豫公网安备 41010502004269号
+
 
 online_api: 
 
