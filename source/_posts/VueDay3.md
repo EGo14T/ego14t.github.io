@@ -95,7 +95,7 @@ new Vue(
    }
 ```
 
-## v-for循环数组，对象数组，对象...
+## v-for循环
 
 假设有数组，对象数组，对象如下：
 
@@ -119,7 +119,7 @@ new Vue({
      }
 ```
 
-**v-for循环数组**
+### v-for循环数组
 
 ```html
 <!--item为每一项的值，i为每一项的下标-->
@@ -128,7 +128,7 @@ new Vue({
 
 ![](../images/Snipaste_2019-09-02_08-18-08.jpg)
 
-**v-for循环对象数组**
+### v-for循环对象数组
 
 ```html
 <p v-for="usr in list2">{{ usr.id }}------name:{{ usr.name }}</p>
@@ -136,7 +136,7 @@ new Vue({
 
 ![](../images/Snipaste_2019-09-02_08-21-45.jpg)
 
-**v-for循环对象**
+### v-for循环对象
 
 ```html
 <p v-for="(val, key, index) in user">value:{{val}}---key:{{key}}--index:{{index}}</p>
@@ -144,7 +144,7 @@ new Vue({
 
 ![](../images/Snipaste_2019-09-02_08-25-53.jpg)
 
-**v-for迭代数字**
+### v-for迭代数字
 
 ```html
 <p v-for="count in 10">loop{{count}}</p>
