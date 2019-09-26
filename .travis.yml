@@ -17,7 +17,7 @@ after_script:
 - git add .
 - git commit -m "Update docs with TRAVIS-CI"
 - git push --force --quiet "https://${EGo1ST}@${GH_REF}" master:master
-- git push git@${IPadress}:/srv/gitrepo/myblog.git origin
+- git push --force git@${IPadress}:/srv/gitrepo/myblog.git
 
 branches:
   only:
