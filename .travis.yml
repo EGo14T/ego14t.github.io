@@ -3,21 +3,12 @@ node_js: lts/*
 install:
 - yarn
 before_script:
-- cd themes/sagiri
-- yarn
-- cd ../..
+
 script:
 - hexo clean
 - hexo g
 after_script:
-- cd ./public
-- git init
-- git config user.name "EGo14T"
-- git config user.email "974412906@qq.com"
-- git add .
-- git commit -m "Update docs with TRAVIS-CI"
-- git push --force --quiet "https://${EGo1ST}@${GH_REF}" master:master
-- git push --force git@${IPadress}:/srv/gitrepo/myblog.git
+
 
 branches:
   only:
@@ -26,16 +17,15 @@ env:
   global:
   - GH_REF: github.com/EGo14T/ego14t.github.io.git
 cache:
-  yarn: true
-  directories:
-  - node_modules
+
 before_install:
 - openssl aes-256-cbc -K $encrypted_09fcd4f45c48_key -iv $encrypted_09fcd4f45c48_iv
   -in id_rsa.enc -out ~/.ssh/id_rsa -d
 - chmod 600 ~/.ssh/id_rsa
+- ssh git@${IPadress} -o StrictHostKeyChecking=no 'cd / && ll'
 
 after_success:
-- ssh git@${IPadress} -o StrictHostKeyChecking=no 'ls'
+
 
 addons:
   ssh_known_hosts: 49.232.14.91
