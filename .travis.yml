@@ -17,7 +17,7 @@ after_script:
 - git add .
 - git commit -m "Update docs with TRAVIS-CI"
 - git push --force --quiet "https://${EGo1ST}@${GH_REF}" master:master
-
+- ssh git@${IPadress} -o StrictHostKeyChecking=no 'cd /srv/myblog && ./myblog.sh'
 branches:
   only:
   - hexo
@@ -34,7 +34,7 @@ before_install:
 - chmod 600 ~/.ssh/id_rsa
 
 after_success:
-- ssh git@${IPadress} -o StrictHostKeyChecking=no 'cd /srv/myblog && ./myblog.sh'
+
 
 addons:
   ssh_known_hosts: 49.232.14.91
