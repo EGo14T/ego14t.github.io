@@ -22,7 +22,7 @@ before_install:
 - openssl aes-256-cbc -K $encrypted_09fcd4f45c48_key -iv $encrypted_09fcd4f45c48_iv
   -in id_rsa.enc -out ~/.ssh/id_rsa -d
 - chmod 600 ~/.ssh/id_rsa
-- ssh git@${IPadress} -o StrictHostKeyChecking=no 'cd / && ll'
+- ssh git@${IPadress} -o StrictHostKeyChecking=no 'cd / && ls -a'
 
 after_success:
 
