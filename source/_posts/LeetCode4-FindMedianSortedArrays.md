@@ -98,7 +98,7 @@ public double findMedianSortedArrays(int[] nums1, int[] nums2) {
 
 寻找第n/2小的数，找的思路如下图所示
 
-![](./images/findSmall.gif)
+![](../images/findSmall.gif)
 
 ### 代码
 
