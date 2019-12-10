@@ -779,7 +779,7 @@ css: css
 js: js
 images: images
 
-header_bg: /images/header-weather.jpg
+header_bg: http://q2ac985gd.bkt.clouddn.com/header-weather.jpg
 
 
 card:
