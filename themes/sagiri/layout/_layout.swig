@@ -110,5 +110,7 @@
         console.log('Service workers are not supported in the current browser.');
     }
   </script>
+
+  <script src="http://cdn.ego1st.cn/ribbon.js"></script>
 </body>
 </html>
