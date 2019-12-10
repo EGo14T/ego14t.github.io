@@ -23,5 +23,8 @@
     "hexo-renderer-stylus": "^0.3.3",
     "hexo-server": "^0.3.3",
     "hexo-wordcount": "3.0.2"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.10"
   }
 }
