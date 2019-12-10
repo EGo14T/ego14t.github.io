@@ -784,8 +784,8 @@ header_bg: /images/header-weather.jpg
 
 card:
   avatar: /images/card.jpg
-  name: <span style="opacity:.2;">帅B</span>EGo1ST
-  description: 五元钱，结下缘，汝乃为有缘人
+  name: <span style="opacity:.1;">帅B</span>EGo1ST
+  description: 什么都不会，什么都敢做的全干工程师>_<
 
 footer:
   # Specify the date when the site was setup.

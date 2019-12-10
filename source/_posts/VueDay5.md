@@ -1,6 +1,6 @@
 ---
 title: Vue-Day5
-date: 2019-12-01 15:09:1
+date: 2019-12-01 15:09:17
 tags:
 categories:
   - Vue笔记
@@ -8,9 +8,7 @@ categories:
 
 上个月，本来是后端程序员的我，被拉上当前端来用，第一次体验到前端的工作，还有人生中第一次加班（连着两周。。）咕咕咕好久的博客了，这次在这里总结一下噩梦18天我学到的东西，知识点可能比较杂碎~
 
-![]()
-
-![表情1](./images/表情1.jpg)
+![表情1](../images/表情1.jpg)
 
 <!--more-->
 
@@ -182,3 +180,115 @@ increment(){
 
 # axios
 
+axios 是一个基于 promise 的 HTTP 库，可以用在浏览器和 node.js 中，类似于Jquery中的`$.ajax`。
+
+在项目中主要用到了全局拦截和封装`axios`
+
+首先来讲全局拦截器：
+
+1. 定义一个全局请求拦截器
+
+   ```js
+   // http request 拦截器
+   axios.interceptors.request.use(config => {
+    //TODO
+     return config;
+   }, err => {
+       //TODO
+   })
+   ```
+   
+2. 定义一个全局响应拦截器
+
+   ```js
+   // http response 拦截器
+   axios.interceptors.response.use(data => {
+     //TODO
+     return data;
+   }, err => {
+     //TODO
+   })
+   ```
+
+然后是简单的`axios`封装
+
+```js
+let base = '';
+export const postRequest = (url, params) => {
+  return axios({
+    method: 'post',
+    url: `${base}${url}`,
+    data: params,
+    transformRequest: [function (data) {
+      let ret = ''
+      for (let it in data) {
+        ret += encodeURIComponent(it) + '=' + encodeURIComponent(data[it]) + '&'
+      }
+      return ret
+    }],
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    }
+  });
+}
+export const uploadFileRequest = (url, params) => {
+  return axios({
+    method: 'post',
+    url: `${base}${url}`,
+    data: params,
+    headers: {
+      'Content-Type': 'multipart/form-data'
+    }
+  });
+}
+export const putRequest = (url, params) => {
+  return axios({
+    method: 'put',
+    url: `${base}${url}`,
+    data: params,
+    transformRequest: [function (data) {
+      let ret = ''
+      for (let it in data) {
+        ret += encodeURIComponent(it) + '=' + encodeURIComponent(data[it]) + '&'
+      }
+      return ret
+    }],
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    }
+  });
+}
+export const deleteRequest = (url) => {
+  return axios({
+    method: 'delete',
+    url: `${base}${url}`
+  });
+}
+export const getRequest = (url) => {
+  return axios({
+    method: 'get',
+    url: `${base}${url}`
+  });
+}
+```
+
+# 杂碎的知识点
+
+1. 使用`setInterval()`方法时一定要记得销毁，利用`clearInterval()`
+
+2. 过滤器的使用
+
+   ```js
+   //姓名脱敏
+   filters:{
+       name:function(value){
+           if(value == undefined) return "";
+           if(value.length==2) return value.substring(0,1)+'*';
+           if(value.length==3) return value.substring(0,1)+'**';
+         },
+     }
+   ```
+
+3. vue中`<style>`标签的`scope`属性和深度选择器`/deep/`的使用，应用场景：你自定义一个css样式，但是又不想影响全局，这时你可以给`<style>`标签设置`scope`属性，这样css样式只在此组件中有效，但是有些样式又想作用在子组件中，此时可以在该样式之前加上`/deep`或者`::v-deep`，该样式就可以穿透到子组件中了。这样做不仅可以减少标签id或者class的定义还可以避免css样式污染。
+
+先写这么多，以后遇到新的知识点还会补充~~~
