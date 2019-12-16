@@ -116,14 +116,22 @@
 
           </nav>
 
-          {% set cc = {'by': 1, 'by-nc': 1, 'by-nc-nd': 1, 'by-nc-sa': 1, 'by-nd': 1, 'by-sa': 1, 'zero': 1} %}
+          {#{% set cc = {'by': 1, 'by-nc': 1, 'by-nc-nd': 1, 'by-nc-sa': 1, 'by-nd': 1, 'by-sa': 1, 'zero': 1} %}
           {% if theme.creative_commons in cc %}
             <div class="cc-license motion-element" itemprop="license">
               <a href="https://creativecommons.org/{% if theme.creative_commons === 'zero' %}publicdomain/zero/1.0{% else %}licenses/{{ theme.creative_commons }}/4.0{% endif %}/deed.zh" class="cc-opacity" target="_blank">
                 <img src="{{ url_for(theme.images) }}/cc-{{ theme.creative_commons }}.png" alt="Creative Commons" />
               </a>
             </div>
-          {% endif %}
+          {% endif %}#}
+
+          
+            <div class="cc-license motion-element" itemprop="license">
+              <a href="https://www.upyun.com/" class="cc-opacity" target="_blank">
+                <img src="{{theme.footer.upyunimg}}" alt="Creative Commons" />
+              </a>
+            </div>
+          
 
           {# Blogroll #}
           {#
