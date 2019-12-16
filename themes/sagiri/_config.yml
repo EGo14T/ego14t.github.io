@@ -779,7 +779,7 @@ css: css
 js: js
 images: images
 
-header_bg: http://cdn.ego1st.cn/header-weather.jpg
+header_bg: /header-weather.jpg
 
 
 card:
