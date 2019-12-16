@@ -779,7 +779,7 @@ css: css
 js: js
 images: images
 
-header_bg: /header-weather.jpg
+header_bg: /images/header-weather.jpg
 
 
 card:
