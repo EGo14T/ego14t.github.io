@@ -8,7 +8,7 @@ categories:
 
 以下是我对SpringCloud中eureka服务注册与发现，服务提供者和服务消费者的理解
 
-![](../images/Snipaste_2019-08-12_10-34-58.jpg)
+![](https://cdn.ego1st.cn/postImg/Snipaste_2019-08-12_10-34-58.jpg)
 
 <!--more-->
 

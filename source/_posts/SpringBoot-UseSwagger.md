@@ -10,7 +10,7 @@ categories:
 Swagger是一个简单但功能强大的API表达工具。它具有地球上最大的API工具生态系统，数以千计的开发人员，使用几乎所有的现代编程语言，都在支持和使用Swagger。使用Swagger生成API，我们可以得到交互式文档，自动生成代码的SDK以及API的发现特性等。  
 现在，Swagger已经帮助包括Apigee, Getty图像, Intuit, LivingSocial, McKesson, 微软, Morningstar和PayPal等世界知名企业建立起了一套基于RESTful API的完美服务系统。  
 2.0版本已经发布，Swagger变得更加强大。值得感激的是，Swagger的源码100%开源在github。
-![swagger](../images/Snipaste_2019-07-30_09-36-02.jpg)
+![swagger](https://cdn.ego1st.cn/postImg/Snipaste_2019-07-30_09-36-02.jpg)
 
 <!--more-->
 
@@ -76,7 +76,7 @@ Swagger实例Bean是Docket，所以通过配置Docket实例来配置Swaggger
 
 然后启动项目，打开`http://localhost:8080/swagger-ui.html`即可看到接口文档
 
-![Swagger文档页面](../images/swagger页面.jpg)
+![Swagger文档页面](https://cdn.ego1st.cn/postImg/swagger页面.jpg)
 
 ### 配置要扫描的接口
 
@@ -132,7 +132,7 @@ Swagger实例Bean是Docket，所以通过配置Docket实例来配置Swaggger
 
 ## 完成
 
-![swagger](../images/Snipaste_2019-07-30_09-36-02.jpg)
+![swagger](https://cdn.ego1st.cn/postImg/Snipaste_2019-07-30_09-36-02.jpg)
 
 ## Api的详细信息配置
 
@@ -142,7 +142,7 @@ Swagger实例Bean是Docket，所以通过配置Docket实例来配置Swaggger
 @Api(value = "歌单Controller",tags = {"歌单操作类接口"})
 ```
 
-![](../images/Snipaste_2019-07-30_09-44-35.jpg)
+![](https://cdn.ego1st.cn/postImg/Snipaste_2019-07-30_09-44-35.jpg)
 
 2.  `@ApiOperation`：作用于方法上，表示一个http请求的操作，value用于方法描述 ，notes用于提示内容
 
@@ -151,7 +151,7 @@ Swagger实例Bean是Docket，所以通过配置Docket实例来配置Swaggger
    @ApiOperation(value="根据歌单id返回歌曲列表",tags={""},notes="注意问题点")
    ```
 
-   ![](../images/Snipaste_2019-07-30_09-55-36.jpg)
+   ![](https://cdn.ego1st.cn/postImg/Snipaste_2019-07-30_09-55-36.jpg)
 
 3. `@ApiImplicitParams() `：用于方法，参数，字段说明，标识请求参数name参数名，value参数说明，dataType数据类型 ，paramType参数类型 ，example–举例说明，required是否必填
 

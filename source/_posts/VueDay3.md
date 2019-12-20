@@ -126,7 +126,7 @@ new Vue({
 <p v-for="(item, i) in list1">{{item}}------index:{{i}}</p>
 ```
 
-![](../images/Snipaste_2019-09-02_08-18-08.jpg)
+![](https://cdn.ego1st.cn/postImg/Snipaste_2019-09-02_08-18-08.jpg)
 
 ### v-for循环对象数组
 
@@ -134,7 +134,7 @@ new Vue({
 <p v-for="usr in list2">{{ usr.id }}------name:{{ usr.name }}</p>
 ```
 
-![](../images/Snipaste_2019-09-02_08-21-45.jpg)
+![](https://cdn.ego1st.cn/postImg/Snipaste_2019-09-02_08-21-45.jpg)
 
 ### v-for循环对象
 
@@ -142,7 +142,7 @@ new Vue({
 <p v-for="(val, key, index) in user">value:{{val}}---key:{{key}}--index:{{index}}</p>
 ```
 
-![](../images/Snipaste_2019-09-02_08-25-53.jpg)
+![](https://cdn.ego1st.cn/postImg/Snipaste_2019-09-02_08-25-53.jpg)
 
 ### v-for迭代数字
 
@@ -150,4 +150,4 @@ new Vue({
 <p v-for="count in 10">loop{{count}}</p>
 ```
 
-![](../images/Snipaste_2019-09-02_09-06-44.jpg)
+![](https://cdn.ego1st.cn/postImg/Snipaste_2019-09-02_09-06-44.jpg)

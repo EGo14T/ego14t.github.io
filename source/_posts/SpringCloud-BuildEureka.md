@@ -22,7 +22,7 @@ Eureka由两个组件组成：
 
 填写项目名之后，添加依赖，选择Spring Cloud Discovery-->Eureka Server，如图：
 
-![](../images/Snipaste_2019-08-12_11-00-21.jpg)
+![](https://cdn.ego1st.cn/postImg/Snipaste_2019-08-12_11-00-21.jpg)
 
 pom.xml文件的依赖如下：
 
@@ -78,7 +78,7 @@ eureka:
 
 ## 启动
 
-![](../images/Snipaste_2019-08-12_11-23-22.jpg)
+![](https://cdn.ego1st.cn/postImg/Snipaste_2019-08-12_11-23-22.jpg)
 
 # Eureka Client的使用
 
@@ -145,4 +145,4 @@ server:
 
 启动后，在`Instances currently registered with Eureka`中可看到Eureka客户端的信息
 
-![](../images/Snipaste_2019-08-12_11-40-27.jpg)
+![](https://cdn.ego1st.cn/postImg/Snipaste_2019-08-12_11-40-27.jpg)

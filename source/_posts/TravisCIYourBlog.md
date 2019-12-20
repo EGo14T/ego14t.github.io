@@ -40,7 +40,7 @@ categories:
 $ yum info git
 ```
 
-![](../images/Snipaste_2019-08-14_16-33-13.jpg)
+![](https://cdn.ego1st.cn/postImg/Snipaste_2019-08-14_16-33-13.jpg)
 
 版本是1.8.3.1，想使用最新版的Git，只能使用编译安装  
 
@@ -126,19 +126,19 @@ $ git init blog.git --bare # 创建仓库目录
 [TravisCi]([https://travis-ci.org]),注意网站地址结尾是org（公开的），com结尾的是私有的，是收费的
 
 ### 添加你的仓库
-![](../images/Snipaste_2019-08-14_17-19-07.jpg)
+![](https://cdn.ego1st.cn/postImg/Snipaste_2019-08-14_17-19-07.jpg)
 
 ### 配置你的仓库
 点击`Setting` ，设置选项
-![](../images/Snipaste_2019-08-14_17-22-28.jpg)
+![](https://cdn.ego1st.cn/postImg/Snipaste_2019-08-14_17-22-28.jpg)
 
 ### 在Github添加Access Token
 `Setting`-->`Developer setting`-->`Personal access tokens`-->`Generate new token`
-![](../images/Snipaste_2019-08-14_17-27-04.jpg)除了删库，其他的都打上勾
+![](https://cdn.ego1st.cn/postImg/Snipaste_2019-08-14_17-27-04.jpg)除了删库，其他的都打上勾
 
 ### 在TravisCI设置中添加token
 
-![](../images/Snipaste_2019-08-14_17-31-40.jpg)
+![](https://cdn.ego1st.cn/postImg/Snipaste_2019-08-14_17-31-40.jpg)
 
 `name`自定义 ，`value`为Github上的`access Token`点击Add添加 
 

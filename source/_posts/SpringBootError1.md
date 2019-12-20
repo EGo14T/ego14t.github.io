@@ -14,7 +14,7 @@ categories:
 
 如图所示：
 
-![报错信息](../images/Snipaste_2019-08-02_17-33-39.jpg)
+![报错信息](https://cdn.ego1st.cn/postImg/Snipaste_2019-08-02_17-33-39.jpg)
 
 网上找了几种解决办法：
 
@@ -41,7 +41,7 @@ categories:
 
    在我打开`target`目录之后，发现
 
-   ![target目录](../images/Snipaste_2019-08-02_17-54-09.jpg)
+   ![target目录](https://cdn.ego1st.cn/postImg/Snipaste_2019-08-02_17-54-09.jpg)
 
 `mapper`目录下并没有生成xml文件，百度之后得知，IDEA默认不会生成xml文件，需要修改一下`pom.xml`文件，修改如下：
 

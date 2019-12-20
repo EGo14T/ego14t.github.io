@@ -90,9 +90,9 @@ categories:
 + v-bind只能实现数据的单向绑定
 + v-model可以实现数据的双向绑定，v-model只能运用在表单元素中  
 ### v-bind:  
-![v-bind](../images/v-bind.gif)  
+![v-bind](https://cdn.ego1st.cn/postImg/v-bind.gif)  
 修改v-bind绑定的文本框的值，并不会改变msg的值  
 ### v-model:  
-![v-model](../images/v-model.gif)  
+![v-model](https://cdn.ego1st.cn/postImg/v-model.gif)  
 修改v-model绑定的文本框的值，会改变msg的值，vue监听到data属性中msg值的改变，从而改变v-bind绑定的文本框的值  
 v-model--->改变msg--->改变v-model

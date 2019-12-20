@@ -90,7 +90,7 @@ public class WithRunnable implements Runnable {
 4. 阻塞`(blocked)`：线程暂停执行，让出CPU时间片，并将其交给其他线程使用
 5. 死亡`dead`：当前线程完成工作或者抛出异常时，线程死亡
 
-![线程的状态](../images/xiancheng.png)
+![线程的状态](https://cdn.ego1st.cn/postImg/xiancheng.png)
 
 以上简单的介绍了一下线程的基础，下面是关于线程的同步问题
 

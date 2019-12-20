@@ -31,7 +31,7 @@ example = "123")
 
 在pom文件中加入排除，如图：
 
-![](../images/swagger-4.jpg)
+![](https://cdn.ego1st.cn/postImg/swagger-4.jpg)
 
 然后导入新版的`swagger-models`
 
@@ -49,8 +49,8 @@ example = "123")
 
 ## 原因：
 
-如果example没有写值的话，默认是空串"" ,且不为空。![](../images/swagger-3.jpg)
+如果example没有写值的话，默认是空串"" ,且不为空。![](https://cdn.ego1st.cn/postImg/swagger-3.jpg)
 
-![](../images/swagger-2.jpg)
+![](https://cdn.ego1st.cn/postImg/swagger-2.jpg)
 
 因为 空字符串`""`无法转成`Number`所以抛出异常

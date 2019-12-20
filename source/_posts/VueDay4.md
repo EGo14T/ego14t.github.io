@@ -14,7 +14,7 @@ categories:
 
 ## 实例的生命周期图
 
-![](../images/vuelife.png)
+![](https://cdn.ego1st.cn/postImg/vuelife.png)
 
 ## 生命周期钩子在`new Vue`内以**属性**的方式进行声明
 
