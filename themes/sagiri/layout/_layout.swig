@@ -111,6 +111,6 @@
     }
   </script>-->
 
-  <script src="cdn.ego1st.cn/ribbon.js"></script>
+  <script src="https://cdn.ego1st.cn/JS/ribbon.js"></script>
 </body>
 </html>
