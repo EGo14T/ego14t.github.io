@@ -127,7 +127,7 @@ links:
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
 # in site  directory(source/uploads): /uploads/avatar.gif
-avatar: /images/EGo1ST.jpg
+avatar: https://cdn.ego1st.cn/themeImg/EGo1ST.jpg
 
 # Table Of Contents in the Sidebar
 toc:
@@ -779,11 +779,11 @@ css: css
 js: js
 images: images
 
-header_bg: /images/header-weather.jpg
+header_bg: https://cdn.ego1st.cn/themeImg/header-weather.jpg
 
 
 card:
-  avatar: /images/card.jpg
+  avatar: https://cdn.ego1st.cn/themeImg/card.jpg
   name: <span style="opacity:.2;">帅B</span>EGo1ST
   description: 什么都不会，什么都敢做的全干工程师
 
