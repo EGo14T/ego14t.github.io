@@ -124,10 +124,6 @@ markdown:
     typographer: true
     quotes: '“”‘’'
   plugins:
-    - markdown-it-footnote
-    - markdown-it-sup
-    - markdown-it-sub
-    - markdown-it-abbr
     - markdown-it-emoji
   anchors:
     level: 2
