@@ -7,7 +7,7 @@ categories:
 ---
 # Vue 笔记&ensp;Day1
 ## Vue指令
-1. &#123;&#123;&#125;&#125;&ensp;&ensp;&ensp;&ensp;插值表达式会去data里寻找插值表达式中的变量对应的值
+1. {{}} 插值表达式会去data里寻找插值表达式中的变量对应的值
 2. v-cloak&ensp;&ensp;&ensp;&ensp;可以解决插值表达式闪烁的问题
 <!--more-->
 3. v-text&emsp;&ensp;&ensp;&ensp;把msg1解析成字符串输出 
