@@ -2593,10 +2593,10 @@ hexo-util@^0.6.3:
     html-entities "^1.2.0"
     striptags "^2.1.1"
 
-hexo-util@^1.0.0, hexo-util@^1.4.0, hexo-util@^1.7.0:
-  version "1.8.0"
-  resolved "https://registry.npm.taobao.org/hexo-util/download/hexo-util-1.8.0.tgz#3dacb93f09ac9e217589ab5b9c59212b8c047783"
-  integrity sha1-Pay5PwmsniF1iatbnFkhK4wEd4M=
+hexo-util@^1.0.0, hexo-util@^1.4.0, hexo-util@^1.7.0, hexo-util@^1.8.0:
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/hexo-util/-/hexo-util-1.8.1.tgz#d8287561709e246a6a73f07fccaed2a82865a736"
+  integrity sha512-gzZmcdpYjG168xunWaxFAtNhBA7il6jeaSLxL2Mj7+XRg86RqZGCgHK00gI35aQvaUPKO3XLmWQl8QyN61fa5w==
   dependencies:
     bluebird "^3.5.2"
     camel-case "^4.0.0"
@@ -2645,22 +2645,21 @@ hexo@^3.0.0:
     titlecase "^1.1.2"
     warehouse "^2.2.0"
 
-hexo@^4.1.1:
-  version "4.1.1"
-  resolved "https://registry.npm.taobao.org/hexo/download/hexo-4.1.1.tgz#c82dc34b83fc97e56265474223f2e884bc79a713"
-  integrity sha1-yC3DS4P8l+ViZUdCI/LohLx5pxM=
+hexo@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/hexo/-/hexo-4.2.0.tgz#dd306abe801ca47623cae7c86818af4425b466ec"
+  integrity sha512-j2Kzgx/eWF0IgSfUEsAAhr0mDaaqR3E1MTus0/Vrs+JpQdMiSlqSbudPf2S9O4FHi5CAzDCuzToGlg2kgoQxcA==
   dependencies:
     abbrev "^1.1.1"
     archy "^1.0.0"
     bluebird "^3.5.2"
     chalk "^3.0.0"
-    cheerio "0.22.0"
     hexo-cli "^3.0.0"
     hexo-front-matter "^1.0.0"
     hexo-fs "^2.0.0"
     hexo-i18n "^1.0.0"
     hexo-log "^1.0.0"
-    hexo-util "^1.7.0"
+    hexo-util "^1.8.0"
     js-yaml "^3.12.0"
     lodash "^4.17.11"
     micromatch "^4.0.2"
@@ -5100,14 +5099,7 @@ resolve-url@^0.2.1:
   resolved "https://registry.npm.taobao.org/resolve-url/download/resolve-url-0.2.1.tgz#2c637fe77c893afd2a663fe21aa9080068e2052a"
   integrity sha1-LGN/53yJOv0qZj/iGqkIAGjiBSo=
 
-resolve@^1.10.0, resolve@^1.8.1:
-  version "1.13.1"
-  resolved "https://registry.npm.taobao.org/resolve/download/resolve-1.13.1.tgz#be0aa4c06acd53083505abb35f4d66932ab35d16"
-  integrity sha1-vgqkwGrNUwg1BauzX01mkyqzXRY=
-  dependencies:
-    path-parse "^1.0.6"
-
-resolve@^1.11.0:
+resolve@^1.10.0, resolve@^1.11.0, resolve@^1.8.1:
   version "1.14.1"
   resolved "https://registry.npm.taobao.org/resolve/download/resolve-1.14.1.tgz#9e018c540fcf0c427d678b9931cbf45e984bcaff"
   integrity sha1-ngGMVA/PDEJ9Z4uZMcv0XphLyv8=
