@@ -732,6 +732,37 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@leancloud/adapters-superagent@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@leancloud/adapters-superagent/-/adapters-superagent-1.0.1.tgz#388c4be55676e53d71af77446806d7bcf5264621"
+  integrity sha512-zR9d1XNSxgNFd0n9qXPAR+Y6bCZhafr21VmJ5FdIYgtxNP+lQcByd4VjgBnRDGZ4MT2vIhOKWD4xhY+OJoT+XA==
+  dependencies:
+    superagent "^5.2.2"
+
+"@leancloud/runtime-adapters-browser@^1.0.0":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@leancloud/runtime-adapters-browser/-/runtime-adapters-browser-1.0.1.tgz#73649f79e5d1e96c20438ae8f3a64aec46b16acc"
+  integrity sha512-1lFaNGmntYUdFsGvzjMa4AL9JHdMi5g0SwwRSPKSDnTLa8g4/xDfO2T832CU3WssvCX9wE9uKuaSAGOrpP3cQA==
+  dependencies:
+    "@leancloud/adapters-superagent" "^1.0.1"
+
+"@leancloud/runtime-adapters-node@^1.0.0":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@leancloud/runtime-adapters-node/-/runtime-adapters-node-1.0.1.tgz#be300043cb21733c9e34f2d2226e75a4230415cc"
+  integrity sha512-zscoAqVLFgun07P9mnKOu0w6pIO9gegxzwRYpz7Y9FjM+xZM8XfELEsfZe1u0mvxhD1rJlij3nzfuwoRlhhUTw==
+  dependencies:
+    "@leancloud/adapters-superagent" "^1.0.1"
+    localstorage-memory "^1.0.2"
+    ws "^5.2.2"
+
+"@leancloud/runtime-adapters-weapp@^1.0.1":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@leancloud/runtime-adapters-weapp/-/runtime-adapters-weapp-1.0.2.tgz#e886b091e838e0ce905e780a3dfa550994bb44c7"
+  integrity sha512-zj6AfOBe7Ej05Kxj0TxH8r1add/r9xGIvuwl4n2KfvAq4IWT3cOn0X/4/Z/Uz2Dqg8g6o2ffytZYrnxBdHuZNg==
+  dependencies:
+    event-target-shim "^5.0.1"
+    miniprogram-api-typings "^2.10.2"
+
 "@webassemblyjs/ast@1.8.5":
   version "1.8.5"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.8.5.tgz#51b1c5fe6576a34953bf4b253df9f0d490d9e359"
@@ -1720,13 +1751,6 @@ colour@~0.7.1:
   resolved "https://registry.npmjs.org/colour/-/colour-0.7.1.tgz#9cb169917ec5d12c0736d3e8685746df1cadf778"
   integrity sha1-nLFpkX7F0SwHNtPoaFdG3xyt93g=
 
-combined-stream@1.0.6:
-  version "1.0.6"
-  resolved "https://registry.npmjs.org/combined-stream/-/combined-stream-1.0.6.tgz#723e7df6e801ac5613113a7e445a9b69cb632818"
-  integrity sha1-cj599ugBrFYTETp+RFqbactjKBg=
-  dependencies:
-    delayed-stream "~1.0.0"
-
 combined-stream@^1.0.8:
   version "1.0.8"
   resolved "https://registry.npm.taobao.org/combined-stream/download/combined-stream-1.0.8.tgz#c3d45a8b34fd730631a110a8a2520682b31d5a7f"
@@ -1749,7 +1773,7 @@ commondir@^1.0.1:
   resolved "https://registry.npmjs.org/commondir/-/commondir-1.0.1.tgz#ddd800da0c66127393cca5950ea968a3aaf1253b"
   integrity sha1-3dgA2gxmEnOTzKWVDqloo6rxJTs=
 
-component-emitter@^1.2.0, component-emitter@^1.2.1:
+component-emitter@^1.2.1:
   version "1.2.1"
   resolved "https://registry.npmjs.org/component-emitter/-/component-emitter-1.2.1.tgz#137918d6d78283f7df7a6b7c5a63e140e69425e6"
   integrity sha1-E3kY1teCg/ffemt8WmPhQOaUJeY=
@@ -1827,7 +1851,7 @@ cookie@0.4.0:
   resolved "https://registry.npm.taobao.org/cookie/download/cookie-0.4.0.tgz?cache=0&sync_timestamp=1570621785421&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcookie%2Fdownload%2Fcookie-0.4.0.tgz#beb437e7022b3b6d49019d088665303ebe9c14ba"
   integrity sha1-vrQ35wIrO21JAZ0IhmUwPr6cFLo=
 
-cookiejar@^2.1.0, cookiejar@^2.1.2:
+cookiejar@^2.1.2:
   version "2.1.2"
   resolved "https://registry.npmjs.org/cookiejar/-/cookiejar-2.1.2.tgz#dd8a235530752f988f9a0844f3fc589e3111125c"
   integrity sha512-Mw+adcfzPxcPeI+0WlvRrr/3lGVO0bD75SxX6811cxSh1Wbxx7xZBGK1eVtDf6si8rg2lhnUjsVLMFMfbRIuwA==
@@ -2317,6 +2341,11 @@ etag@~1.8.1:
   resolved "https://registry.npm.taobao.org/etag/download/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
   integrity sha1-Qa4u62XvpiJorr/qg6x9eSmbCIc=
 
+event-target-shim@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/event-target-shim/-/event-target-shim-5.0.1.tgz#5d4d3ebdf9583d63a5333ce2deb7480ab2b05789"
+  integrity sha512-i/2XbnSz/uxRCU6+NdVJgKWDTM427+MqYbkQzD321DuCQJUqOuJKIA0IM2+W2xtYHdKOmZ4dR6fExsd4SXL+WQ==
+
 eventemitter3@^2.0.3:
   version "2.0.3"
   resolved "https://registry.npmjs.org/eventemitter3/-/eventemitter3-2.0.3.tgz#b5e1079b59fb5e1ba2771c0a993be060a58c99ba"
@@ -2658,15 +2687,6 @@ for-own@^1.0.0:
   dependencies:
     for-in "^1.0.1"
 
-form-data@^2.3.1:
-  version "2.3.2"
-  resolved "https://registry.npmjs.org/form-data/-/form-data-2.3.2.tgz#4970498be604c20c005d4f5c23aecd21d6b49099"
-  integrity sha1-SXBJi+YEwgwAXU9cI67NIda0kJk=
-  dependencies:
-    asynckit "^0.4.0"
-    combined-stream "1.0.6"
-    mime-types "^2.1.12"
-
 form-data@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npm.taobao.org/form-data/download/form-data-3.0.0.tgz#31b7e39c85f1355b7139ee0c647cf0de7f83c682"
@@ -2676,7 +2696,7 @@ form-data@^3.0.0:
     combined-stream "^1.0.8"
     mime-types "^2.1.12"
 
-formidable@^1.2.0, formidable@^1.2.1:
+formidable@^1.2.1:
   version "1.2.1"
   resolved "https://registry.npmjs.org/formidable/-/formidable-1.2.1.tgz#70fb7ca0290ee6ff961090415f4b3df3d2082659"
   integrity sha512-Fs9VRguL0gqGHkXS5GQiMCr1VhZBxz0JnJs4JmMp/2jL18Fmbzvv7vOFRU+U8TBkHEE/CX1qDXzJplVULgsLeg==
@@ -3659,35 +3679,39 @@ leancloud-realtime-plugin-live-query@^1.2.0:
   resolved "https://registry.npm.taobao.org/leancloud-realtime-plugin-live-query/download/leancloud-realtime-plugin-live-query-1.2.0.tgz#1e07da1b5b99e44cddbc3b052234422f278c4ab9"
   integrity sha1-HgfaG1uZ5EzdvDsFIjRCLyeMSrk=
 
-leancloud-realtime@^5.0.0-beta.0:
-  version "5.0.0-beta.1"
-  resolved "https://registry.npm.taobao.org/leancloud-realtime/download/leancloud-realtime-5.0.0-beta.1.tgz#3448e8fa6fd35bd708a4e138565101f233a86669"
-  integrity sha1-NEjo+m/TW9cIpOE4VlEB8jOoZmk=
+leancloud-realtime@^5.0.0-beta.3:
+  version "5.0.0-rc.0"
+  resolved "https://registry.yarnpkg.com/leancloud-realtime/-/leancloud-realtime-5.0.0-rc.0.tgz#7d596ac7718e2bfa0f5f0a3acb75be3e4b9ba41a"
+  integrity sha512-4luoT+qW/2W5/LcgOvHFwwUfLdR+u3C1HBtEYZPRkIh3qVxLvcGk39MvfB5deCdP/KNhu5yHvl3ajGNucGF9+w==
   dependencies:
     "@babel/runtime" "^7.7.4"
+    "@leancloud/runtime-adapters-browser" "^1.0.0"
+    "@leancloud/runtime-adapters-node" "^1.0.0"
+    "@leancloud/runtime-adapters-weapp" "^1.0.1"
     base64-arraybuffer "^0.1.5"
     debug "^3.1.0"
     eventemitter3 "^3.0.0"
     javascript-state-machine "^2.3.5"
     lodash "^4.17.10"
+    promise-timeout "^1.3.0"
     protobufjs "^5.0.1"
-    superagent "^5.1.0"
     uuid "^3.0.0"
-    ws "^5.2.1"
 
-leancloud-storage@4.2.0:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/leancloud-storage/-/leancloud-storage-4.2.0.tgz#c973cf488cb3d9309eeaac7c081c27adef7cb73a"
-  integrity sha512-Mfw1hZScZGM6lpUyAninyrpMaFyibF4g26jMXfTTC9z64wOXyOWaM5SCddTRvAbs3ppcnL9N8TL1/nMgzJRtCQ==
+leancloud-storage@4.3.1:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/leancloud-storage/-/leancloud-storage-4.3.1.tgz#7f2edfcaad052f275c08be2040d73bb4444166ad"
+  integrity sha512-qm5oRyuoiSuJ3AJpaPWGkOqqzCtRJ39B6y5Sk6ttDUVlKaY0h7EgdF+xLe17OnUL4a+BaT2ZkDUAVlWAkZio3A==
   dependencies:
+    "@leancloud/runtime-adapters-browser" "^1.0.0"
+    "@leancloud/runtime-adapters-node" "^1.0.0"
+    "@leancloud/runtime-adapters-weapp" "^1.0.1"
     debug "^3.1.0"
     es6-promise "4.2.3"
     eventemitter3 "^2.0.3"
-    leancloud-realtime "^5.0.0-beta.0"
+    leancloud-realtime "^5.0.0-beta.3"
     leancloud-realtime-plugin-live-query "^1.2.0"
-    localstorage-memory "^1.0.1"
     md5 "^2.0.0"
-    superagent "^3.3.1"
+    promise-timeout "^1.3.0"
     underscore "^1.8.3"
     uuid "^3.3.2"
 
@@ -3751,10 +3775,10 @@ loader-utils@^1.0.2, loader-utils@^1.1.0, loader-utils@^1.2.3, loader-utils@^1.4
     emojis-list "^3.0.0"
     json5 "^1.0.1"
 
-localstorage-memory@^1.0.1:
-  version "1.0.2"
-  resolved "https://registry.npmjs.org/localstorage-memory/-/localstorage-memory-1.0.2.tgz#cd4a8f210e55dd519c929f4b4cc82829b58f9a51"
-  integrity sha1-zUqPIQ5V3VGckp9LTMgoKbWPmlE=
+localstorage-memory@^1.0.2:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/localstorage-memory/-/localstorage-memory-1.0.3.tgz#566b37968fe0c4d76ba36a6da564fa613945ca72"
+  integrity sha512-t9P8WB6DcVttbw/W4PIE8HOqum8Qlvx5SjR6oInwR9Uia0EEmyUeBh7S+weKByW+l/f45Bj4L/dgZikGFDM6ng==
 
 locate-path@^2.0.0:
   version "2.0.0"
@@ -3948,7 +3972,7 @@ merge-descriptors@1.0.1:
   resolved "https://registry.npm.taobao.org/merge-descriptors/download/merge-descriptors-1.0.1.tgz#b00aaa556dd8b44568150ec9d1b953f3f90cbb61"
   integrity sha1-sAqqVW3YtEVoFQ7J0blT8/kMu2E=
 
-methods@^1.1.1, methods@^1.1.2, methods@~1.1.2:
+methods@^1.1.2, methods@~1.1.2:
   version "1.1.2"
   resolved "https://registry.npmjs.org/methods/-/methods-1.1.2.tgz#5529a4d67654134edcc5266656835b0f851afcee"
   integrity sha1-VSmk1nZUE07cxSZmVoNbD4Ua/O4=
@@ -4004,7 +4028,7 @@ mime-types@~2.1.24:
   dependencies:
     mime-db "1.42.0"
 
-mime@1.6.0, mime@^1.4.1:
+mime@1.6.0:
   version "1.6.0"
   resolved "https://registry.npmjs.org/mime/-/mime-1.6.0.tgz#32cd9e5c64553bd58d19a568af452acff04981b1"
   integrity sha512-x0Vn8spI+wuJ1O6S7gnbaQg8Pxh4NNHb7KSINmEWKiPE4RKOplvijn+NkmYmmRgP68mc70j2EbeTFRsrswaQeg==
@@ -4061,6 +4085,11 @@ minipass@^2.2.1, minipass@^2.3.3:
   dependencies:
     safe-buffer "^5.1.2"
     yallist "^3.0.0"
+
+miniprogram-api-typings@^2.10.2:
+  version "2.10.2"
+  resolved "https://registry.yarnpkg.com/miniprogram-api-typings/-/miniprogram-api-typings-2.10.2.tgz#a94995fd8c167b58dcc45bee46e600f543563ec2"
+  integrity sha512-nb2vtGCVyNRJqR8C01RVg9H4qCuq5u2eCdEVjrSO1E9ZDonUApCePs3ZEtd0C8CbTuBmp5ZlGhX1Npnu5dxEfg==
 
 minizlib@^1.1.0:
   version "1.1.0"
@@ -4771,6 +4800,11 @@ promise-polyfill@8.0.0:
   resolved "https://registry.yarnpkg.com/promise-polyfill/-/promise-polyfill-8.0.0.tgz#b47c7fc74052cc5b2132b703cca144f1a5eb56ef"
   integrity sha512-QGmPnw2hDEaRS6freHynJ7nfS1nDg0/P0c/CGglA43utoJjYQMiY9ojEpK0HaJ4wbUztdmwqQRlEfGWdsEQ5uQ==
 
+promise-timeout@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/promise-timeout/-/promise-timeout-1.3.0.tgz#d1c78dd50a607d5f0a5207410252a3a0914e1014"
+  integrity sha512-5yANTE0tmi5++POym6OgtFmwfDvOXABD9oj/jLQr5GPEyuNEb7jH4wbbANJceJid49jwhi1RddxnhnEAb/doqg==
+
 protobufjs@^5.0.1:
   version "5.0.3"
   resolved "https://registry.npmjs.org/protobufjs/-/protobufjs-5.0.3.tgz#e4dfe9fb67c90b2630d15868249bcc4961467a17"
@@ -4854,11 +4888,6 @@ qs@6.7.0:
   version "6.7.0"
   resolved "https://registry.npm.taobao.org/qs/download/qs-6.7.0.tgz#41dc1a015e3d581f1621776be31afb2876a9b1bc"
   integrity sha1-QdwaAV49WB8WIXdr4xr7KHapsbw=
-
-qs@^6.5.1:
-  version "6.5.2"
-  resolved "https://registry.npmjs.org/qs/-/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"
-  integrity sha512-N5ZAX4/LxJmF+7wN74pUD6qAh9/wnvdQcjq9TZjevvXzSUo7bfmw91saqMjzGS2xq91/odN2dW/WOl7qQHNDGA==
 
 qs@^6.9.1:
   version "6.9.1"
@@ -5632,26 +5661,10 @@ strip-json-comments@~2.0.1:
   resolved "https://registry.npmjs.org/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
   integrity sha1-PFMZQukIwml8DsNEhYwobHygpgo=
 
-superagent@^3.3.1:
-  version "3.8.3"
-  resolved "https://registry.npmjs.org/superagent/-/superagent-3.8.3.tgz#460ea0dbdb7d5b11bc4f78deba565f86a178e128"
-  integrity sha512-GLQtLMCoEIK4eDv6OGtkOoSMt3D+oq0y3dsxMuYuDvaNUvuT8eFBuLmfR0iYYzHC1e8hpzC6ZsxbuP6DIalMFA==
-  dependencies:
-    component-emitter "^1.2.0"
-    cookiejar "^2.1.0"
-    debug "^3.1.0"
-    extend "^3.0.0"
-    form-data "^2.3.1"
-    formidable "^1.2.0"
-    methods "^1.1.1"
-    mime "^1.4.1"
-    qs "^6.5.1"
-    readable-stream "^2.3.5"
-
-superagent@^5.1.0:
-  version "5.1.2"
-  resolved "https://registry.npm.taobao.org/superagent/download/superagent-5.1.2.tgz#b122f3a62b14c4d638612667033a7eb43c4f4d83"
-  integrity sha1-sSLzpisUxNY4YSZnAzp+tDxPTYM=
+superagent@^5.2.2:
+  version "5.2.2"
+  resolved "https://registry.yarnpkg.com/superagent/-/superagent-5.2.2.tgz#6ff726c5642795b2c27009e92687c8e69a6bb07d"
+  integrity sha512-pMWBUnIllK4ZTw7p/UaobiQPwAO5w/1NRRTDpV0FTVNmECztsxKspj3ZWEordVEaqpZtmOQJJna4yTLyC/q7PQ==
   dependencies:
     component-emitter "^1.3.0"
     cookiejar "^2.1.2"
@@ -6293,7 +6306,7 @@ wrappy@1:
   resolved "https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
   integrity sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
 
-ws@^5.2.1:
+ws@^5.2.2:
   version "5.2.2"
   resolved "https://registry.yarnpkg.com/ws/-/ws-5.2.2.tgz#dffef14866b8e8dc9133582514d1befaf96e980f"
   integrity sha512-jaHFD6PFv6UgoIVda6qZllptQsMlDEJkTQcybzzXDYM1XO9Y8em691FGMPmM46WGyLU4z9KMgQN+qrux/nhlHA==
