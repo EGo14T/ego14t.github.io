@@ -1364,10 +1364,10 @@ balanced-match@^1.0.0:
   resolved "https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.0.tgz#89b4d199ab2bee49de164ea02b89ce462d71b767"
   integrity sha1-ibTRmasr7kneFk6gK4nORi1xt2c=
 
-balloon-css@1.0.4:
-  version "1.0.4"
-  resolved "https://registry.npm.taobao.org/balloon-css/download/balloon-css-1.0.4.tgz#fbef7890bd89aa61c474df734c3923a97ebf43d8"
-  integrity sha1-++94kL2JqmHEdN9zTDkjqX6/Q9g=
+balloon-css@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/balloon-css/-/balloon-css-1.1.0.tgz#9fafebeb307757f888e62833361b5cb273d37fc7"
+  integrity sha512-mOugfCpq55mEIIbb2VKazDLD0m56If633T0hiwQ2bQy2gdj/AakoP59fQgJdiHpG1lJiY0APzhu5Gin2izUsjw==
 
 balloon-css@^0.5.0:
   version "0.5.0"
