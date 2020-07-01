@@ -372,7 +372,7 @@ valine:
 
 # Support for LiveRe comments system.
 # You can get your uid from https://livere.com/insight/myCode (General web site)
-livere_uid: MTAyMC80NjEyMi8yMjYzMw==
+# livere_uid: MTAyMC80NjEyMi8yMjYzMw==
 
 # Gitment
 # Introduction: https://imsun.net/posts/gitment-introduction/
@@ -389,6 +389,19 @@ gitment:
   client_secret: # EITHER this or proxy_gateway, Github access secret token for the Gitment
   proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect
   redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled
+
+# Gitalk 
+# Demo: https://gitalk.github.io
+# Reference: https://asdfv1929.github.io/2018/01/20/gitalk/, https://liujunzhou.cn/2018/8/10/gitalk-error/#more
+gitalk:
+  enable: true
+  githubID:  EGo14T # Github repo owner
+  repo:  ego14t.github.io # Repository name to store issues.
+  ClientID: 4d5889c8f3ea0034cd2d # Github Application Client ID
+  ClientSecret:  9d222b142ee561ca04c2981096dbeb115864fba9 # Github Application Client Secret
+  adminUser: EGo14T # GitHub repo owner and collaborators, only these guys can initialize github issues
+  distractionFreeMode: true # Facebook-like distraction free mode
+
 
 # Baidu Share
 # Available value:
