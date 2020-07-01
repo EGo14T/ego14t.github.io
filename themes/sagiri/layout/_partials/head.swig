@@ -176,8 +176,8 @@
 {% set js_vendors = {} %}
 {% set js_vendors.jquery      = true %}
 {#% set js_vendors.disqusjs    = true %#}
-{% set js_vendors.gitalk      = true %}
-{% set js_vendors.md5      = true %}
+{#% set js_vendors.gitalk      = true %#}
+{#% set js_vendors.md5      = true %#}
 {% for name, internal in js_vendors %}
   <script type="text/javascript" src="{{ theme.vendors[name] }}"></script>
 {% endfor %}
