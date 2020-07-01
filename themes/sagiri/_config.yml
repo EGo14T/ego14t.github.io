@@ -706,7 +706,11 @@ vendors:
   # Internal path prefix. Please do not edit it.
   _internal: lib
 
-  disqusjs: https://cdn.jsdelivr.net/npm/disqusjs@1.2.2/dist/disqus.js
+  disqusjs: #https://cdn.jsdelivr.net/npm/disqusjs@1.2.2/dist/disqus.js
+
+  gitalk: https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js
+
+  md5: https://cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js
 
   # Internal version: 2.1.5
   jquery: https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js

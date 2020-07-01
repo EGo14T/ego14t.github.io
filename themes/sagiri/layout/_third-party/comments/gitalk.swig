@@ -29,5 +29,5 @@
           distractionFreeMode: '{{ theme.gitalk.distraction_free_mode }}'
         })
         gitalk.render('gitalk-container')
-       </script>
+    </script>
 {% endif %}
