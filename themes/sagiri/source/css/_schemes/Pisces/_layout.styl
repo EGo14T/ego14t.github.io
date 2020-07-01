@@ -3,6 +3,26 @@ body {
   cursor: url('../images/cursor.ico'), auto;
 }
 
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  /*定义滚动条的轨道，内阴影及圆角*/
+  ::-webkit-scrollbar-track {
+    border-radius: 0px;
+    background-color: #efefef;
+  }
+  /*定义滑块，内阴影及圆角*/
+  ::-webkit-scrollbar-thumb {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #c7c9cc;
+    &:hover {
+      background-color: #b5b7bb;
+    }
+  }
+
 .header {
   position: relative;
   margin: 0 auto;
