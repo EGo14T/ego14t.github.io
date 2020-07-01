@@ -28,6 +28,6 @@
           id: md5(location.pathname),
           distractionFreeMode: '{{ theme.gitalk.distraction_free_mode }}'
         })
-        gitalk.render('gitalk-container')           
+        gitalk.render('gitalk-container')
        </script>
 {% endif %}
