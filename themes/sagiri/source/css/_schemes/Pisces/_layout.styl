@@ -171,10 +171,6 @@ a {
   padding: 1px 15px;
   border-radius: 5px;
   border: none;
-
-  &:hover {
-    background: $second-color;
-  }
 }
 
 .posts-expand .post-body .fancybox img {
@@ -246,4 +242,12 @@ a {
 .tada {
     -webkit-animation-name: tada;
     animation-name: tada;
+}
+
+.scaleup {
+    transition: 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
 }
