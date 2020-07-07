@@ -5,7 +5,7 @@
     <ul id="menu" class="menu">
       {% for name, path in theme.menu %}
         {% set itemName = name.toLowerCase() %}
-        <li class="menu-item menu-item-{{ itemName | replace(' ', '-') }}">
+        <li class="menu-item scaleup menu-item-{{ itemName | replace(' ', '-') }}">
           <a href="{{ url_for(trim(path.split('||')[0])) }}" rel="section"{% if path.split('||')[2] %} target="_blank"{% endif %}>
             {% if theme.menu_icons.enable %}
               <i class="menu-item-icon fa fa-fw fa-{{ path.split('||')[1] | trim | default('question-circle') }}"></i> <br />
