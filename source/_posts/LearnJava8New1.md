@@ -134,14 +134,12 @@ Lambda操作符把Lambda表达式拆分成了两部分
    ```
 
 3.  语法格式三： 有多个参数(>=2)，且Lambda体中有多条语句
-
-   ```java
-   Comparator<Integer> com = (x,y) -> {
-       System.out.println("Lambda表达式");
-       return Integer.compare(x,y);
-   };
-   ```
-
+    ```java
+        Comparator<Integer> com = (x,y) -> {
+        System.out.println("Lambda表达式");
+        return Integer.compare(x,y);
+    };
+    ```
 4. 语法格式四：有多个参数(>=2)，Lambda体中只有一条语句
 
    ```java
