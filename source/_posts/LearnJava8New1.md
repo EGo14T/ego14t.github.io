@@ -157,6 +157,83 @@ Lambda操作符把Lambda表达式拆分成了两部分
 | Function<T, R> 函数型接口 | T        | R        | R apply(T t);      |
 | Predicate 断言型接口      | T        | boolean  | boolean test(T t); |
 
+1. `Consumer<T>`消费型接口
+
+   ```java
+   @Test
+   public void test1(){
+       ConsumerTest(100, x-> System.out.println(x*x));
+   }
+   
+   public void ConsumerTest(Integer a, Consumer<Integer> consumer){
+       consumer.accept(a);
+   }
+   ```
+
+2. `Supplier<T>`供给型接口
+
+   ```java
+   @Test
+   public void test2(){
+       List<Integer> numList = SupplierTest(5, ()-> (int)(Math.random()*100));
+       numList.forEach(System.out::println);
+   }
+   
+   public List<Integer> SupplierTest(Integer a, Supplier<Integer> supplier){
+       List<Integer> list = new ArrayList<>();
+       for (int i = 0; i < a ; i++) {
+           Integer n = supplier.get();
+           list.add(n);
+       }
+       return list;
+   }
+   ```
+
+3. `Function<T,R>`函数型接口
+
+   ```java
+   @Test
+   public void test3(){
+       Integer a = FunctionTest(10, x->{
+           return x*200;
+       });
+   
+       System.out.println(a);
+   }
+   
+   public Integer FunctionTest(Integer a, Function<Integer,Integer> function){
+       return function.apply(a);
+   }
+   ```
+
+4. `Predicate<T>`断言型接口
+
+   ```java
+   @Test
+   public void test4(){
+       List<Integer> a = Arrays.asList(1,2,3,4,5,6,7);
+       List<Integer> res = PredicateTest(a,x->{
+           return x > 3;
+       });
+   
+       res.forEach(System.out::println);
+   }
+   
+   public List<Integer> PredicateTest(List<Integer> a, Predicate<Integer> predicate){
+       List<Integer> list = new ArrayList<>();
+   
+       for (Integer b :
+               a) {
+           if (predicate.test(b)){
+               list.add(b);
+           }
+       }
+       return list;
+   }
+   ```
+
+   
+
 ## 总结
 
 Lambda表达式是匿名内部类的语法糖，可以使代码更加简洁易懂，我们可以使用自定义的函数式接口或者Java内置的函数式接口来编写Lambda表达式，Lambda表达式还可以和Stream流，Optional<T>结合，使代码更加优雅。
