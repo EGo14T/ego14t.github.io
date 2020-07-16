@@ -79,31 +79,31 @@ public interface Predicate<T> {
 
 ```java
 //匿名内部类写法
-    @Test
-    public void test1(){
-        List<Integer> a = Arrays.asList(1,2,3,4,5);
-        List<Integer> b = filter(a, new Predicate<Integer>() {
-            @Override
-            public boolean filter(Integer integer) {
-                return integer>4;
-            }
-        });
-        for (int c :
-                b)
-            System.out.println(c);
-    }
+@Test
+public void test1(){
+    List<Integer> a = Arrays.asList(1,2,3,4,5);
+    List<Integer> b = filter(a, new Predicate<Integer>() {
+        @Override
+        public boolean filter(Integer integer) {
+            return integer>4;
+        }
+    });
+    for (int c :
+            b)
+        System.out.println(c);
+}
 ```
 
 我们再使用Lambda表达式的方式实现这个需求，代码如下：
 
 ```java
 //Lambda表达式写法
-    @Test
-    public void test4(){
-        List<Integer> a = Arrays.asList(1,2,3,4,5);
-        List<Integer> b = filter(a, x -> x>4);
-        b.forEach(System.out::println);
-    }
+@Test
+public void test4(){
+    List<Integer> a = Arrays.asList(1,2,3,4,5);
+    List<Integer> b = filter(a, x -> x>4);
+    b.forEach(System.out::println);
+}
 ```
 
 可以看出，使用Lambda表达式改写匿名内部类的实现，使代码看起来更加简洁易懂
@@ -135,9 +135,9 @@ Lambda操作符把Lambda表达式拆分成了两部分
 
 3.  语法格式三： 有多个参数(>=2)，且Lambda体中有多条语句
     ```java
-        Comparator<Integer> com = (x,y) -> {
-        System.out.println("Lambda表达式");
-        return Integer.compare(x,y);
+    Comparator<Integer> com = (x,y) -> {
+    System.out.println("Lambda表达式");
+    return Integer.compare(x,y);
     };
     ```
 4. 语法格式四：有多个参数(>=2)，Lambda体中只有一条语句
