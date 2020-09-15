@@ -11,7 +11,7 @@
     "hexo-deployer-git": "2.1.0",
     "hexo-fs": "3.1.0",
     "hexo-generator-archive": "^1.0.0",
-    "hexo-generator-baidu-sitemap": "^0.1.6",
+    "hexo-generator-baidu-sitemap": "^0.1.9",
     "hexo-generator-category": "^1.0.0",
     "hexo-generator-index": "^1.0.0",
     "hexo-generator-sitemap": "2.1.0",
