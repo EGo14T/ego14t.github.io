@@ -86,16 +86,32 @@ public final class Optional<T> {
 
 4. `Optional<T> filter(Predicate<? super T> predicate)`：`filter`接受一个`Predicate`对象，可以实现对Optional对象包装值的过滤，如果满足条件则返回该Optional对象，不满足则返回空Optional对象
 
-5. `Optional<U> map(Function<? super T, ? extends U> mapper)`：`map`方法传入一个函数进行运算，如果Optional对象的包装值为`null`，或经过函数运算后返回值为`null`则返回一个包装值为`null`的Optional对象，否则返回经函数处理后的Optional对象
+5. `Optional<U> map(Function<? super T, ? extends U> mapper)`：`map`方法传入一个函数进行运算，如果Optional对象的包装值为`null`，或经过函数运算后返回值为`null`则返回一个包装值为`null`的Optional对象，否则返回经函数处理后的Optional对象，包装对象的类型可能改变
+
+   ```java
+   Optional<Integer> map = Optional.ofNullable(student).map(Student::getAge);
+   ```
 
 6. `Optional<U> flatMap(Function<? super T, Optional<U>> mapper)`：`flatMap`方法类似于`map`方法，但是该方法可以返回一个新的Optional对象，举例如下：
 
    ```java
-   Optional<Integer> studentAge = Optional.ofNullable(student)
+   Optional<Integer> flatmap = Optional.ofNullable(student)
        								   .flatMap(s-> Optional.ofNullable(s.getAge()));
    ```
 
-7. 
+   注意：`flatmap`和`map`的区别是`map`方法返回值自动封装为Optional对象，而`flatmap`方法需要手动封装为Optional对象
+
+7. `T orElse(T other)`：如果Optional对象包装值不为`null`则返回包装值，否则返回`other`
+
+8. `T orElseGet(Supplier<? extends T> other)`：与`orElse`的区别是将`Supplier`的`get`方法的返回值作为默认值
+
+9. `T orElseThrow(Supplier<? extends X> exceptionSupplier)`：Optional对象包装值为`null`时，抛出异常，示例：
+
+   ```java
+   Optional.ofNullable(student).map(u -> u.getAge()).orElseThrow(() -> new RuntimeException("Unkown"));
+   ```
+
+   
 
 
 
