@@ -125,7 +125,7 @@
             </div>
           {% endif %}#}
             <div class="cc-license motion-element" itemprop="license">
-              <a href="https://www.upyun.com/" class="cc-opacity" target="_blank">
+              <a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" class="cc-opacity" target="_blank">
                 <img src="{{theme.footer.upyunimg}}" alt="Creative Commons" />
               </a>
             </div>
