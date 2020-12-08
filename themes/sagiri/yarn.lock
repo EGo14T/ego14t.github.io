@@ -1515,10 +1515,10 @@ corner-notie@1.2.1:
   resolved "https://registry.npm.taobao.org/corner-notie/download/corner-notie-1.2.1.tgz#e1524e07f0d2fc5e603c0ed03b831c576ba767f0"
   integrity sha1-4VJOB/DS/F5gPA7QO4McV2unZ/A=
 
-cross-env@7.0.2:
-  version "7.0.2"
-  resolved "https://registry.npm.taobao.org/cross-env/download/cross-env-7.0.2.tgz#bd5ed31339a93a3418ac4f3ca9ca3403082ae5f9"
-  integrity sha1-vV7TEzmpOjQYrE88qco0Awgq5fk=
+cross-env@7.0.3:
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/cross-env/-/cross-env-7.0.3.tgz#865264b29677dc015ba8418918965dd232fc54cf"
+  integrity sha512-+/HKd6EgcQCJGh2PSjZuUitQBQynKor4wrFbRg4DtAgS1aWO+gU52xpH7M9ScGgXSYmAVS9bIJ8EzuaGw0oNAw==
   dependencies:
     cross-spawn "^7.0.1"
 
