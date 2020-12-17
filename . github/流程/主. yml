@@ -24,7 +24,9 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout to hexo
-        uses: actions/checkout@hexo
+        uses: actions/checkout@v2.3.4
+        with:
+          ref: hexo 
 
       # Runs a single command using the runners shell
       - name: Node.js 10
