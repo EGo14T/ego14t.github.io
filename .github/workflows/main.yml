@@ -1,0 +1,51 @@
+# This is a basic workflow to help you get started with Actions
+
+name: ego1st's blog deploy
+
+# Controls when the action will run. 
+on:
+  # Triggers the workflow on push or pull request events but only for the hexo branch
+  push:
+    branches: [ hexo ]
+  pull_request:
+    branches: [ hexo ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - name: Checkout Source
+        uses: actions/checkout@v2.3.4
+        with:
+          ref: hexo
+      - name: nodejs
+        uses: actions/setup-node@v2.1.4
+        with:
+          node-version: 10.15.1
+      - name: step hexo
+        env:
+          ACTION_DEPLOY_KEY: ${{ secrets.HEXO_DEPLOY_PRI }}
+        run: |
+          npm install hexo-cli -g
+          cd themes/sagiri
+          npm install
+          cd ../..
+          npm install
+          mkdir -p ~/.ssh/
+          echo "$ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+          git config --global user.email "974412906@qq.com"
+          git config --global user.name "EGo14T"
+      - name: Hexo deploy
+        run: |
+          hexo clean
+          hexo d
