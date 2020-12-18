@@ -86,7 +86,7 @@ theme: sagiri
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/EGo14T/ego14t.github.io.git
+  repo: git@github.com:EGo14T/ego14t.github.io.git
   branch: master
   
 search:
