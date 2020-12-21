@@ -58,5 +58,5 @@ jobs:
             export GIT_HOME=/usr/local/git
             export PATH=$PATH:$GIT_HOME/bin
             source /etc/profile
-            cd /ego1st/ego14t.github.io
-            git pull
+            cd /srv/myblog
+            ./myblog.sh
