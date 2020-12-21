@@ -55,5 +55,11 @@ jobs:
           password: ${{ secrets.SERVER_PWD }}
           port: ${{ secrets.SERVER_PORT }}
           script: | # 执行命令（运行到服务器）cd：要确保服务器有这个目录； wget：下载上一步的release到服务器； tar：解压； 安装依赖；启动服务
-            cd /srv/myblog/
-            ./myblog.sh
+            cd /ego1st/ego14t.github.io
+            git checkout master
+            git fetch --all
+            git reset --hard origin/master
+            git pull
+            echo ego1st部署成功！！！
+            echo $(date +%Y/%m/%d)
+            echo $(date +%T)
