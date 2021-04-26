@@ -5,10 +5,10 @@ if (window.CONFIG.leancloud.enable) {
   AV.init({
     appId: window.CONFIG.leancloud.appID,
     appKey: window.CONFIG.leancloud.appKey,
-    serverURLs: 'https://avoscloud.com',
+    serverURLs: 'https://leancloud.ego1st.cn',
   });
+  window.AV = AV;
 }
-
 function leancloud () {
 
   if (window.CONFIG.leancloud.enable) {
@@ -51,9 +51,6 @@ function leancloud () {
             }
           }
         })
-        .then(function (object, error) {
-          console.log("Error: " + error.code + " " + error.message);
-        });
     }
 
     function addCount (Counter) {
@@ -76,9 +73,6 @@ function leancloud () {
                 var $element = $(document.getElementById(url));
                 $element.find('.leancloud-visitors-count').text(counter.get('time'));
               })
-              .then(function (counter, error) {
-                console.log('Failed to save Visitor num, with error message: ' + error.message);
-              });
           } else {
             var newcounter = new Counter();
             /* Set ACL */
@@ -99,9 +93,6 @@ function leancloud () {
                 console.log('Failed to create');
               });
           }
-        })
-        .then(function (error) {
-          console.log('Error:' + error.code + " " + error.message);
         })
     }
 

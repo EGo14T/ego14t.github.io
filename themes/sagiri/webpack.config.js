@@ -3,6 +3,7 @@ const path = require('path');
 const webpack = require('webpack');
 const GitRevisionPlugin = require('git-revision-webpack-plugin');
 const gitRevisionPlugin = new GitRevisionPlugin();
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
 
@@ -20,10 +21,6 @@ module.exports = {
         path: path.resolve(__dirname, 'source', 'js'),
         filename: '[name].min.js',
         publicPath: '/'
-    },
-
-    performance: {
-        hints:false   
     },
 
     resolve: {
@@ -49,11 +46,13 @@ module.exports = {
         ]
     },
 
-    node: {
-        dgram: 'empty',
-        fs: 'empty',
-        net: 'empty',
-        tls: 'empty',
-    }
+    plugins: [
+        new BundleAnalyzerPlugin({
+            logLevel: 'warn',
+            reportFilename: 'video-report.html',
+            analyzerMode: 'static',
+            openAnalyzer: false,
+        }),
+    ],
 
 };
