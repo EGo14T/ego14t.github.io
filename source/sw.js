@@ -100,25 +100,13 @@ routing.registerRoute(
 );
 
 routing.registerRoute(
-    new RegExp('https://ip\.diygod\.me'),
+    new RegExp('https://ip\.ego1st\.cn'),
     new NetworkOnly()
 );
 
 routing.registerRoute(
     new RegExp('https://hrddibvw\.api\.lncldglobal\.com'),
     new NetworkOnly()
-);
-
-routing.registerRoute(
-    new RegExp('https://disqus\.diygod\.me'),
-    new NetworkFirst({
-        cacheName: 'api' + cacheSuffixVersion,
-        fetchOptions: {
-            mode: 'cors',
-            credentials: 'omit'
-        },
-        networkTimeoutSeconds: 3
-    })
 );
 
 /*
