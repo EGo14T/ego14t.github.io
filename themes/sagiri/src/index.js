@@ -26,5 +26,5 @@ require('./pjax');
 // require('./online');
 require('./search');
 require('./zoom')();
-require('./aplayer');
+//require('./aplayer');
 require('./cursor-effects');
