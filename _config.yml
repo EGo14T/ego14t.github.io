@@ -100,16 +100,6 @@ js_minifier:
 
 image_minifier:
   enable: false
-  
-live2d:
-  enable: true
-  pluginModelPath: assets/
-  model:
-    use: wanko  #模板目录，在node_modules里
-  display:
-    hOffset: 100
-  mobile:
-    show: false  #是否在手机进行显示
     
 aplayer:
   meting: true
