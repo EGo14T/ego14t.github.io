@@ -111,6 +111,14 @@
     }
   </script>-->
 
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js');
+      });
+    }
+  </script>
+
   <script src="https://cdn.ego1st.cn/JS/ribbon.js"></script>
 </body>
 </html>
